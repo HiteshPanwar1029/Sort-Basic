@@ -4,9 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sort Shoes</title>
+    <style>
+        body{
+            /* background-color: bisque; */
+            height: 3000px;
+            border: 2px solid red;
+            margin: 0%;
+            padding: 0%;
+        }
+        h1{
+            border: 2px solid green;
+            font-size: 5rem;
+             margin: 2px 0px;
+             position: absolute;
+             top: 0px;
+             left: 40%;
+        }
+        .display-icon img{
+            border: 2px solid blue;
+            position: fixed;
+            height: 80px;
+            width: 80px;
+        }
+        .bgimage{
+            width: 100%;
+        }
+        header{
+            border: 2px solid black;
+            display: flex;
+        }
+        .searchbar{
+            border: 2px solid purple;
+            position: fixed;
+            right: 10px;
+            border-radius: 40px;
+            padding: 12px;
+        }
+        form div input{
+            border: 2px solid goldenrod;
+            border-radius: 40px;
+            padding: 15px;
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- <Header> -->
+        <div class="display-icon"><img src="icon1.png" alt=""></div>
+        <h1>Sort Shoes</h1>
+        <form action="noaction.php">
+            <div class="searchbar">
+                <input type="text" placeholder="Search our products">
+            </div>
+        </form>
+    <!-- </Header> -->
+    <img class="bgimage" src="shoe1.JPG" alt="">
+    <img class="bgimage" src="shoe2.JPG" alt="">
+    <img class="bgimage" src="bg.jpg" alt="">
+    <footer>
+        <div class="contactinfo">
+            <div>
+                <button>
+                    <img src="" alt="">
+                    Instagram
+                </button>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

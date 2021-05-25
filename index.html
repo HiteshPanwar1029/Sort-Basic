@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sort Shoes</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
     <style>
         body {
             /* background-color: bisque; */
@@ -15,7 +17,8 @@
         }
 
         h1 {
-            border: 2px solid green;
+            font-family: 'Pattaya', sans-serif;
+            /* border: 2px solid green; */
             font-size: 5rem;
             margin: 2px 0px;
             position: absolute;
@@ -24,7 +27,7 @@
         }
 
         .display-icon img {
-            border: 2px solid blue;
+            /* border: 2px solid blue; */
             position: fixed;
             height: 80px;
             width: 80px;
@@ -33,11 +36,11 @@
 
         .bgimage {
             width: 100%;
-            border: 3px solid red;
+            /* border: 3px solid red; */
         }
 
         .shopnow {
-            position: absolute;
+            position: sticky;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -52,12 +55,12 @@
         }
 
         header {
-            border: 2px solid black;
+            /* border: 2px solid black; */
             display: flex;
         }
 
         .searchbar {
-            border: 2px solid purple;
+            /* border: 2px solid purple; */
             position: fixed;
             right: 10px;
             border-radius: 40px;
@@ -65,14 +68,14 @@
         }
 
         form div input {
-            border: 2px solid goldenrod;
+            /* border: 2px solid goldenrod; */
             border-radius: 40px;
             padding: 15px;
             width: 200px;
         }
 
         .contactinfo {
-            border: 2pxs solid plum;
+            /* border: 2pxs solid plum; */
             width: 100%;
             height: 200px;
             display: inline-block;
@@ -85,6 +88,7 @@
             background-image: url(/instalogo.png);
             cursor: pointer;
             border: none;
+            align-self: center;
         }
 
         #insta img {
@@ -95,8 +99,19 @@
         }
 
         #whatsapplogo img {
-            width: 50px;
+            width: auto;
             height: 30px;
+        }
+        #whatsapplogo{
+            position: absolute;
+            left: 52%;
+        }
+        #instalogo{
+            position: absolute;
+            left: 48%;
+        }
+        footer{
+            background-color: rgb(128, 245, 210);
         }
     </style>
 </head>
@@ -113,19 +128,37 @@
     <!-- </Header> -->
     <div class="shoeimg" id="shoe1">
         <img class="bgimage" src="shoe1.JPG" alt="">
-        <button class="shopnow">Shop Now</button>
+        <div>
+
+            <a href="https://www.flipkart.com/sort-casual-daily-wear-party-look-driving-loafers-men/p/itm4a0e92697f635?pid=SHOFVHMMXAGMCEXX&lid=LSTSHOFVHMMXAGMCEXXSJYQ75&marketplace=FLIPKART&store=osp%2Fcil&srno=b_1_6&otracker=browse&fm=organic&iid=2ca57a23-f003-46b2-8ed4-5da72cdfdcfa.SHOFVHMMXAGMCEXX.SEARCH&ppt=browse&ppn=browse">
+                <button class="shopnow">Shop Now</button>
+            </a>
+        </div>
     </div>
+
     <div class="shoeimg" id="shoe2">
         <img class="bgimage" src="shoe2.JPG" alt="">
-        <button class="shopnow">Shop Now</button>
+        <div>
+
+            <a href="https://www.flipkart.com/sort-comfortable-casual-daily-wear-sneakers-men/p/itm68df349bcc7e0?pid=SHOGFYH8GRWXGYHE&lid=LSTSHOGFYH8GRWXGYHELGKWOD&marketplace=FLIPKART&store=osp%2Fcil&srno=b_1_5&otracker=browse&fm=organic&iid=2ca57a23-f003-46b2-8ed4-5da72cdfdcfa.SHOGFYH8GRWXGYHE.SEARCH&ppt=browse&ppn=browse">
+                <button class="shopnow">Shop Now</button>
+            </a>
+        </div>
     </div>
+
     <div class="shoeimg" id="shoe3">
         <img class="bgimage" src="sort.jpeg" alt="">
-        <button class="shopnow">Shop Now</button>
+        <div>
+
+            <a href="https://www.flipkart.com/sort-sneakers-men/p/itme31b0be815d75?pid=SHOGFYH8P9YSMDGG&lid=LSTSHOGFYH8P9YSMDGGDKFAUK&marketplace=FLIPKART&store=osp%2Fcil&srno=b_1_1&otracker=browse&fm=organic&iid=2ca57a23-f003-46b2-8ed4-5da72cdfdcfa.SHOGFYH8P9YSMDGG.SEARCH&ppt=browse&ppn=browse">
+                <button class="shopnow">Shop Now</button>
+            </a>
+        </div>
     </div>
+
     <footer>
         <div class="contactinfo">
-            <div>
+            <div id="instalogo">
                 <a href="https://www.instagram.com/sortshoes/">
                     <button id="insta">
                     </button>
@@ -133,6 +166,7 @@
             </div>
             <div id="whatsapplogo">
                 <img src="whatsapplogo.png" alt="">
+                +91 696969969
             </div>
         </div>
     </footer>

@@ -1,59 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sort Shoes</title>
     <style>
-        body{
+        body {
             /* background-color: bisque; */
             height: 3000px;
-            border: 2px solid red;
             margin: 0%;
             padding: 0%;
         }
-        h1{
+
+        h1 {
             border: 2px solid green;
             font-size: 5rem;
-             margin: 2px 0px;
-             position: absolute;
-             top: 0px;
-             left: 40%;
+            margin: 2px 0px;
+            position: absolute;
+            top: 0px;
+            left: 40%;
         }
-        .display-icon img{
+
+        .display-icon img {
             border: 2px solid blue;
             position: fixed;
             height: 80px;
             width: 80px;
             cursor: pointer;
         }
-        .bgimage{
+
+        .bgimage {
             width: 100%;
+            border: 3px solid red;
         }
-        header{
+
+        .shopnow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 25px;
+        }
+
+        header {
             border: 2px solid black;
             display: flex;
         }
-        .searchbar{
+
+        .searchbar {
             border: 2px solid purple;
             position: fixed;
             right: 10px;
             border-radius: 40px;
             padding: 12px;
         }
-        form div input{
+
+        form div input {
             border: 2px solid goldenrod;
             border-radius: 40px;
             padding: 15px;
             width: 200px;
         }
-        .contactinfo{
+
+        .contactinfo {
+            border: 2pxs solid plum;
             width: 100%;
             height: 200px;
             display: inline-block;
         }
-        #insta{
+
+        #insta {
             width: 30px;
             height: 30px;
             background-size: 30px 30px;
@@ -61,38 +86,50 @@
             cursor: pointer;
             border: none;
         }
-        #insta img{
+
+        #insta img {
             width: 30px;
             height: 30px;
             margin: -2px -7px;
             padding: 0px;
         }
-        #whatsapplogo img{
+
+        #whatsapplogo img {
             width: 50px;
             height: 30px;
         }
     </style>
 </head>
+
 <body>
     <!-- <Header> -->
-        <div class="display-icon"><img src="icon1.png" alt=""></div>
-        <h1>Sort Shoes</h1>
-        <form action="noaction.php">
-            <div class="searchbar">
-                <input type="text" placeholder="Search our products">
-            </div>
-        </form>
+    <div class="display-icon"><img src="icon1.png" alt=""></div>
+    <h1>Sort Shoes</h1>
+    <form action="noaction.php">
+        <div class="searchbar">
+            <input type="text" placeholder="Search our products">
+        </div>
+    </form>
     <!-- </Header> -->
-    <img class="bgimage" src="shoe1.JPG" alt="">
-    <img class="bgimage" src="shoe2.JPG" alt="">
-    <img class="bgimage" src="bg.jpg" alt="">
+    <div class="shoeimg" id="shoe1">
+        <img class="bgimage" src="shoe1.JPG" alt="">
+        <button class="shopnow">Shop Now</button>
+    </div>
+    <div class="shoeimg" id="shoe2">
+        <img class="bgimage" src="shoe2.JPG" alt="">
+        <button class="shopnow">Shop Now</button>
+    </div>
+    <div class="shoeimg" id="shoe3">
+        <img class="bgimage" src="sort.jpeg" alt="">
+        <button class="shopnow">Shop Now</button>
+    </div>
     <footer>
         <div class="contactinfo">
             <div>
                 <a href="https://www.instagram.com/sortshoes/">
                     <button id="insta">
                     </button>
-                    </a>
+                </a>
             </div>
             <div id="whatsapplogo">
                 <img src="whatsapplogo.png" alt="">
@@ -100,4 +137,5 @@
         </div>
     </footer>
 </body>
+
 </html>

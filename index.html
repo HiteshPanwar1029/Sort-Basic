@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sort Shoes</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <style>
         body {
             /* background-color: bisque; */
@@ -22,15 +26,73 @@
             margin: 2px 0px;
             position: absolute;
             top: 0px;
-            left: 40%;
+            left: 37%;
+        }
+
+        .display-icon {
+            background-size: 40px 40px;
+            width: 40px;
+            height: 40px;
+
         }
 
         .display-icon img {
             /* border: 2px solid blue; */
             position: fixed;
+            left: 20px;
+            top: 25px;
+            border-radius: 40px;
             height: 80px;
             width: 80px;
             cursor: pointer;
+        }
+
+        .aboutus {
+            height: 700px;
+            background-color: #e7da9d;
+        }
+
+        #whoweare {
+            font-size: 64px;
+            position: relative;
+            text-align: center;
+            top: 30px;
+            font-family: unset;
+        }
+
+        .template {
+            height: 400px;
+            width: 1000px;
+            left: 16%;
+            top: 14%;
+            border-top-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+            position: relative;
+            background-color: rgb(200 233 207);
+            font-size: 30px;
+            font-family: 'Montserrat', sans-serif;
+            color:  black;
+            border: 4px solid black;
+        }
+
+        .text {
+            display: inline-block;
+            height: 350px;
+            position: relative;
+            width: 950px;
+            left: 4%;
+            top: 5%;
+
+        }
+
+        .template:hover {
+            cursor: pointer;
+        }
+
+        .shoename {
+            font-size: 55px;
+            text-align: center;
+            background-color: #278279;
         }
 
         .bgimage {
@@ -39,6 +101,7 @@
         }
 
         .shopnow {
+            display: inline-block;
             position: sticky;
             top: 50%;
             left: 50%;
@@ -52,10 +115,12 @@
             cursor: pointer;
             border-radius: 25px;
         }
-        .shopnow:hover{
+
+        .shopnow:hover {
             background-color: rgb(10, 10, 107);
             color: orangered;
         }
+
         .Header {
             /* border: 2px solid black; */
             height: 150px;
@@ -91,7 +156,6 @@
             background-image: url(/instalogo.png);
             cursor: pointer;
             border: none;
-            align-self: center;
             border-radius: 18px;
         }
 
@@ -106,28 +170,35 @@
             width: auto;
             height: 50px;
         }
-        #whatsapplogo{
-            position: absolute;
-            left: 55%;
+
+        #whatsapplogo {
+            position: relative;
+            top: -19%;
+            left: 52%;
             font-size: 20px;
             color: white;
         }
-        #instalogo{
-            position: absolute;
-            left: 50%;
+
+        #instalogo {
+            display: inline-block;
+            position: relative;
+            left: 45%;
+            top: 30px;
         }
-        footer{
+
+        footer {
             background-color: rgb(13 13 13 / 69%);
         }
-        #email{
+
+        #email {
+            display: inline-block;
             font-size: 20px;
             color: white;
-            /* position: static; */
-            left: 40%;
+            position: relative;
+            top: -100px;
         }
-        #email img{
-            /* position: absolute; */
-            /* left: 45%; */
+
+        #email img {
             width: 50px;
             height: 50px;
         }
@@ -135,55 +206,80 @@
 </head>
 
 <body>
-<div class="Header">
+    <div class="Header">
 
-    <div class="display-icon"><img src="icon1.png" alt=""></div>
-    <h1>Sort Shoes</h1>
-    <form action="noaction.php">
-        <div class="searchbar">
-            <input type="text" placeholder="Search our products">
+        <div class="display-icon"><img src="sortlogo2.jpg" alt=""></div>
+        <h1>Sort Shoes</h1>
+        <form action="noaction.php">
+            <div class="searchbar">
+                <input type="text" placeholder="Search our products">
+            </div>
+        </form>
+    </div>
+    
+    <div class="shoeimg" id="shoe1">
+        <div class="shoename">
+            LOAFERS FOR MEN
         </div>
-    </form>
+        <img class="bgimage" src="shoe1.JPG" alt="">
+        <div>
+            
+            <a href="https://www.flipkart.com/sort-casual-daily-wear-party-look-driving-loafers-men/p/itm4a0e92697f635?pid=SHOFVHMMXAGMCEXX&lid=LSTSHOFVHMMXAGMCEXXSJYQ75&marketplace=FLIPKART&store=osp%2Fcil&srno=b_1_6&otracker=browse&fm=organic&iid=2ca57a23-f003-46b2-8ed4-5da72cdfdcfa.SHOFVHMMXAGMCEXX.SEARCH&ppt=browse&ppn=browse"
+            target="_blank">
+            <button class="shopnow">Shop Now</button>
+        </a>
+    </div>
+</div>
+
+<div class="shoeimg" id="shoe2">
+    <div class="shoename">
+        DAILY WEAR SNEAKERS FOR MEN(BLACK)
+    </div>
+    <img class="bgimage" src="shoe3.jpeg" alt="">
+    <div>
+        
+        <a href="https://www.flipkart.com/sort-comfortable-casual-daily-wear-sneakers-men/p/itm68df349bcc7e0?pid=SHOGFYH8GRWXGYHE&lid=LSTSHOGFYH8GRWXGYHELGKWOD&marketplace=FLIPKART&store=osp%2Fcil&srno=b_1_5&otracker=browse&fm=organic&iid=2ca57a23-f003-46b2-8ed4-5da72cdfdcfa.SHOGFYH8GRWXGYHE.SEARCH&ppt=browse&ppn=browse"
+        target="_blank">
+        <button class="shopnow">Shop Now</button>
+    </a>
+</div>
+</div>
+
+<div class="shoeimg" id="shoe3">
+    <div class="shoename">
+        DAILY WEAR SNEAKERS FOR MEN(WHITE)
+    </div>
+    <img class="bgimage" src="sort.jpeg" alt="">
+    <div>
+        
+        <a href="https://www.flipkart.com/sort-sneakers-men/p/itme31b0be815d75?pid=SHOGFYH8P9YSMDGG&lid=LSTSHOGFYH8P9YSMDGGDKFAUK&marketplace=FLIPKART&store=osp%2Fcil&srno=b_1_1&otracker=browse&fm=organic&iid=2ca57a23-f003-46b2-8ed4-5da72cdfdcfa.SHOGFYH8P9YSMDGG.SEARCH&ppt=browse&ppn=browse"
+        target="_blank">
+        <button class="shopnow">Shop Now</button>
+    </a>
+</div>
 </div>
 
 <div class="aboutus">
-    
+    <div id="whoweare">
+        ABOUT US
+    </div><br><br>
+    <br>
+    <hr width="60%" color="black">
+    <div class="template">
+        <div class="text">
+            SORT SHOES- FEEL LIKE A PLAYER SORT shoes are Manufacturers of high quality Mens Formal and Casual
+            Shoes. We love Providing Value for Money products, On-Time Deliveries and Satisfactory Post-Sales
+            Services for our customers. We are extremely pleased that you are eager to know more about us. We
+            sincerely care for you and want your shopping with us to be a truly satisfying experience. And we are
+            confidently and enthusiastically marching ahead on the path towards excellence. No false or blown-up
+            promises - only solid, real and authentic Super deals. Stay connected, Stay Blessed
+        </div>
+    </div>
 </div>
-
-    <div class="shoeimg" id="shoe1">
-        <img class="bgimage" src="shoe1.JPG" alt="">
-        <div>
-
-            <a href="https://www.flipkart.com/sort-casual-daily-wear-party-look-driving-loafers-men/p/itm4a0e92697f635?pid=SHOFVHMMXAGMCEXX&lid=LSTSHOFVHMMXAGMCEXXSJYQ75&marketplace=FLIPKART&store=osp%2Fcil&srno=b_1_6&otracker=browse&fm=organic&iid=2ca57a23-f003-46b2-8ed4-5da72cdfdcfa.SHOFVHMMXAGMCEXX.SEARCH&ppt=browse&ppn=browse">
-                <button class="shopnow">Shop Now</button>
-            </a>
-        </div>
-    </div>
-
-    <div class="shoeimg" id="shoe2">
-        <img class="bgimage" src="shoe3.jpeg" alt="">
-        <div>
-
-            <a href="https://www.flipkart.com/sort-comfortable-casual-daily-wear-sneakers-men/p/itm68df349bcc7e0?pid=SHOGFYH8GRWXGYHE&lid=LSTSHOGFYH8GRWXGYHELGKWOD&marketplace=FLIPKART&store=osp%2Fcil&srno=b_1_5&otracker=browse&fm=organic&iid=2ca57a23-f003-46b2-8ed4-5da72cdfdcfa.SHOGFYH8GRWXGYHE.SEARCH&ppt=browse&ppn=browse">
-                <button class="shopnow">Shop Now</button>
-            </a>
-        </div>
-    </div>
-
-    <div class="shoeimg" id="shoe3">
-        <img class="bgimage" src="sort.jpeg" alt="">
-        <div>
-
-            <a href="https://www.flipkart.com/sort-sneakers-men/p/itme31b0be815d75?pid=SHOGFYH8P9YSMDGG&lid=LSTSHOGFYH8P9YSMDGGDKFAUK&marketplace=FLIPKART&store=osp%2Fcil&srno=b_1_1&otracker=browse&fm=organic&iid=2ca57a23-f003-46b2-8ed4-5da72cdfdcfa.SHOGFYH8P9YSMDGG.SEARCH&ppt=browse&ppn=browse">
-                <button class="shopnow">Shop Now</button>
-            </a>
-        </div>
-    </div>
-
-    <footer>
+<footer>
         <div class="contactinfo">
             <div id="instalogo">
-                <a href="https://www.instagram.com/sortshoes/">
+                <a href="https://www.instagram.com/sortshoes/" target="_blank">
                     <button id="insta">
                     </button>
                 </a>
@@ -193,7 +289,6 @@
                 +91 2143289723
             </div>
             <div id="email">
-                <br>
                 <img src="gmaillogo.jpg" alt=""><br>
                 help@sotshoes.in
             </div>

@@ -11,7 +11,6 @@
     <style>
         body {
             /* background-color: bisque; */
-            height: 3000px;
             margin: 0%;
             padding: 0%;
         }
@@ -45,7 +44,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
-            background-color: #555;
+            background-color: rgba(38, 50, 160, 0.945);
             color: white;
             font-size: 16px;
             padding: 12px 24px;
@@ -53,15 +52,19 @@
             cursor: pointer;
             border-radius: 25px;
         }
-
-        header {
+        .shopnow:hover{
+            background-color: rgb(10, 10, 107);
+            color: orangered;
+        }
+        .Header {
             /* border: 2px solid black; */
-            display: flex;
+            height: 150px;
+            background-color: #82ab83
         }
 
         .searchbar {
             /* border: 2px solid purple; */
-            position: fixed;
+            position: absolute;
             right: 10px;
             border-radius: 40px;
             padding: 12px;
@@ -82,42 +85,58 @@
         }
 
         #insta {
-            width: 30px;
-            height: 30px;
-            background-size: 30px 30px;
+            width: 50px;
+            height: 50px;
+            background-size: 50px 50px;
             background-image: url(/instalogo.png);
             cursor: pointer;
             border: none;
             align-self: center;
+            border-radius: 18px;
         }
 
         #insta img {
-            width: 30px;
-            height: 30px;
+            width: 50px;
+            height: 50px;
             margin: -2px -7px;
             padding: 0px;
         }
 
         #whatsapplogo img {
             width: auto;
-            height: 30px;
+            height: 50px;
         }
         #whatsapplogo{
             position: absolute;
-            left: 52%;
+            left: 55%;
+            font-size: 20px;
+            color: white;
         }
         #instalogo{
             position: absolute;
-            left: 48%;
+            left: 50%;
         }
         footer{
-            background-color: rgb(128, 245, 210);
+            background-color: rgb(13 13 13 / 69%);
+        }
+        #email{
+            font-size: 20px;
+            color: white;
+            /* position: static; */
+            left: 40%;
+        }
+        #email img{
+            /* position: absolute; */
+            /* left: 45%; */
+            width: 50px;
+            height: 50px;
         }
     </style>
 </head>
 
 <body>
-    <!-- <Header> -->
+<div class="Header">
+
     <div class="display-icon"><img src="icon1.png" alt=""></div>
     <h1>Sort Shoes</h1>
     <form action="noaction.php">
@@ -125,7 +144,12 @@
             <input type="text" placeholder="Search our products">
         </div>
     </form>
-    <!-- </Header> -->
+</div>
+
+<div class="aboutus">
+    
+</div>
+
     <div class="shoeimg" id="shoe1">
         <img class="bgimage" src="shoe1.JPG" alt="">
         <div>
@@ -137,7 +161,7 @@
     </div>
 
     <div class="shoeimg" id="shoe2">
-        <img class="bgimage" src="shoe2.JPG" alt="">
+        <img class="bgimage" src="shoe3.jpeg" alt="">
         <div>
 
             <a href="https://www.flipkart.com/sort-comfortable-casual-daily-wear-sneakers-men/p/itm68df349bcc7e0?pid=SHOGFYH8GRWXGYHE&lid=LSTSHOGFYH8GRWXGYHELGKWOD&marketplace=FLIPKART&store=osp%2Fcil&srno=b_1_5&otracker=browse&fm=organic&iid=2ca57a23-f003-46b2-8ed4-5da72cdfdcfa.SHOGFYH8GRWXGYHE.SEARCH&ppt=browse&ppn=browse">
@@ -165,8 +189,13 @@
                 </a>
             </div>
             <div id="whatsapplogo">
-                <img src="whatsapplogo.png" alt="">
-                +91 696969969
+                <img src="whatsapplogo.png" alt=""><br>
+                +91 2143289723
+            </div>
+            <div id="email">
+                <br>
+                <img src="gmaillogo.jpg" alt=""><br>
+                help@sotshoes.in
             </div>
         </div>
     </footer>
